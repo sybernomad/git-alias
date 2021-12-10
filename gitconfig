@@ -1,0 +1,16 @@
+[alias]
+    br = branch
+    co = checkout
+    d = diff
+    dv = difftool -t vimdiff -y
+    gl = config --global -l
+    hash = rev-parse HEAD
+    hist = log --pretty=format:'%C(auto)%h %ad | %s%d %C(magenta)[%an]' --graph --date=short
+    hist-mono = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    lfall = !git lfs fetch --all && git lfs pull
+    ll = log --oneline
+    originurl = remote set-url origin
+    st = status
+    sub = submodule update --init --recursive
+    unstage = reset HEAD --
+    upsub = submodule foreach 'git submodule update --init --recursive'
